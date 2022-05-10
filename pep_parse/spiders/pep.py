@@ -13,7 +13,7 @@ class PepSpider(scrapy.Spider):
             yield response.follow(pep_link, callback=self.parse_pep)
 
     def parse_pep(self, response):
-        number, name = response.xpath('//h1[@class="page-title"]/text()').get().split('–')
+        number, name = ''.join(response.xpath('//h1[@class="page-title"]//text()').getall()).split('–')
         number = int(number.replace('PEP', ''))
         name = name.strip()
         status = response.xpath(

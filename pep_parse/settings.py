@@ -1,6 +1,7 @@
 import datetime as dt
 
-DATETIME_FORMAT = '%Y-%m-%dT%H-%M-%S'
+from pep_parse.constants import DATETIME_FORMAT
+
 
 BOT_NAME = 'pep_parse'
 
@@ -49,14 +50,14 @@ CONCURRENT_REQUESTS = 32
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'pep_parse.pipelines.PepParsePipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'pep_parse.pipelines.PepParsePipeline': 300,
+}
 
 FEEDS = {
-    f'../result/pep_{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv': {
+     f'../results/pep_{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv': {
         'format': 'csv',
         'fields': ['number', 'name', 'status'],
         'overwrite': True
-    },
+     },
 }

@@ -1,5 +1,5 @@
 from pathlib import Path
 
 PEP_URL = 'peps.python.org'
-RESULTS_DIR = Path(__file__).parent.parent / 'results'
+BASE_DIR = Path(__file__).parent
 DATETIME_FORMAT = '%Y-%m-%dT%H-%M-%S'

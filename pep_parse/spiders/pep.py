@@ -8,7 +8,7 @@ from pep_parse.constants import PEP_URL
 class PepSpider(scrapy.Spider):
     name = 'pep'
     allowed_domains = [f'{PEP_URL}']
-    start_urls = [f'http://{PEP_URL}/']
+    start_urls = [f'https://{PEP_URL}/']
 
     def parse(self, response):
         all_peps = response.xpath('//*[@id="numerical-index"]//td[@class="num"]//a')

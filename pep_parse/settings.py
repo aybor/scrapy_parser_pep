@@ -1,7 +1,4 @@
-import datetime as dt
-
-from pep_parse.constants import DATETIME_FORMAT
-
+from pep_parse.constants import BASE_DIR
 
 BOT_NAME = 'pep_parse'
 
@@ -55,9 +52,9 @@ ITEM_PIPELINES = {
 }
 
 FEEDS = {
-     f'../results/pep_{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv': {
+    'results/pep_%(time)s.csv': {
         'format': 'csv',
         'fields': ['number', 'name', 'status'],
-        'overwrite': True
-     },
+    }
 }
+stop = 0

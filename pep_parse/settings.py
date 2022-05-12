@@ -17,10 +17,3 @@ FEEDS = {
         'fields': ['number', 'name', 'status'],
     }
 }
-
-# FEEDS = {
-#     BASE_DIR / 'results/pep_%(time)s.csv': {
-#         'format': 'csv',
-#         'fields': ['number', 'name', 'status'],
-#     }
-# }

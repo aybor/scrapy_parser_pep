@@ -23,8 +23,8 @@ class PepSpider(scrapy.Spider):
                 '//h1[@class="page-title"]//text()'
             ).getall()
         )
-        pattern = r'^PEP (?P<number>\d+) – (?P<name>.*)$'
-        number, name = re.search(pattern, full_name).groups()
+        pattern = r'^(?P<name>PEP (?P<number>\d+) – .*)$'
+        name, number = re.search(pattern, full_name).groups()
         number = int(number.replace('PEP', ''))
         name = name.strip()
         status = response.xpath(

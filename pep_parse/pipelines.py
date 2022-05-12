@@ -19,15 +19,15 @@ class PepParsePipeline:
         return item
 
     def close_spider(self, spider):
-        results = [('Статус', 'Количество')]
-        for status, qty in result_dic.items():
-            results.append((status, qty))
-        results.append(('Total', sum(result_dic.values())))
+        fieldnames = ['Статус', 'Количество']
         results_dir = BASE_DIR / 'results'
         results_dir.mkdir(exist_ok=True)
         file_name = (f'status_summary_'
                      f'{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv')
         file_path = results_dir / file_name
-        with open(file_path, 'w', encoding='utf-8') as f:
-            writer = csv.writer(f, dialect='unix')
-            writer.writerows(results)
+
+        with open(file_path, 'w') as f:
+            writer = csv.DictWriter(f, dialect='unix', fieldnames=fieldnames, delimiter=',', quoting=csv.QUOTE_NONE)
+            writer.writeheader()
+            for status, qty in result_dic.items():
+                writer.writerow({'Статус': status, 'Количество': qty})

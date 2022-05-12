@@ -32,8 +32,8 @@ class PepSpider(scrapy.Spider):
             '/following-sibling::dd[1]/text()'
         ).get()
         data = {
-            'number': number.strip(),
-            'name': name.strip(),
-            'status': status.strip(),
+            'number': number.strip().encode('utf-8'),
+            'name': name.strip().encode('utf-8'),
+            'status': status.strip().encode('utf-8'),
         }
         yield PepParseItem(data)

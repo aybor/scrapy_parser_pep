@@ -46,13 +46,13 @@
 8001,PEP 8001 – Python Governance Voting Process,Final
 3155,PEP 3155 – Qualified name for classes and functions,Final
 8000,PEP 8000 – Python Language Governance Proposal Overview,Active
-3156,PEP 3156 – Asynchronous IO Support Rebooted: the “asyncio” Module,Final
+3156,PEP 3156 – Asynchronous IO Support Rebooted: the asyncio Module,Final
 3154,PEP 3154 – Pickle protocol version 4,Final
 3153,PEP 3153 – Asynchronous IO support,Superseded
 3143,PEP 3143 – Standard daemon process library,Deferred
 3151,PEP 3151 – Reworking the OS and IO exception hierarchy,Final
 3152,PEP 3152 – Cofunctions,Rejected
-3150,PEP 3150 – Statement local namespaces (aka “given” clause),Deferred
+3150,PEP 3150 – Statement local namespaces (aka given clause),Deferred
 3148,PEP 3148 – futures - execute computations asynchronously,Final
 3149,PEP 3149 – ABI version tagged .so files,Final
 3147,PEP 3147 – PYC Repository Directories,Final
@@ -60,9 +60,9 @@
 3146,PEP 3146 – Merging Unladen Swallow into CPython,Withdrawn
 3145,PEP 3145 – Asynchronous I/O For subprocess.Popen,Withdrawn
 3140,PEP 3140 – str(container) should call str(item), not repr(item),Rejected
-3142,PEP 3142 – Add a “while” clause to generator expressions,Rejected
+3142,PEP 3142 – Add a while clause to generator expressions,Rejected
 3141,PEP 3141 – A Type Hierarchy for Numbers,Final
-3139,PEP 3139 – Cleaning out sys and the “interpreter” module,Rejected
+3139,PEP 3139 – Cleaning out sys and the interpreter module,Rejected
 3138,PEP 3138 – String representation in Python 3000,Final
 3135,PEP 3135 – New Super,Final
 3134,PEP 3134 – Exception Chaining and Embedded Tracebacks,Final
@@ -132,7 +132,7 @@
 673,PEP 673 – Self Type,Accepted
 670,PEP 670 – Convert macros to functions in the Python C API,Accepted
 669,PEP 669 – Low Impact Monitoring for CPython,Draft
-668,PEP 668 – Marking Python base environments as “externally managed”,Draft
+668,PEP 668 – Marking Python base environments as externally managed,Draft
 667,PEP 667 – Consistent views of namespaces,Draft
 662,PEP 662 – Editable installs via virtual wheels,Rejected
 664,PEP 664 – Python 3.11 Release Schedule,Draft
@@ -211,7 +211,7 @@
 587,PEP 587 – Python Initialization Configuration,Final
 590,PEP 590 – Vectorcall: a fast calling protocol for CPython,Accepted
 586,PEP 586 – Literal Types,Accepted
-592,PEP 592 – Adding “Yank” Support to the Simple API,Final
+592,PEP 592 – Adding Yank Support to the Simple API,Final
 588,PEP 588 – GitHub Issues Migration Plan,Draft
 589,PEP 589 – TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys,Accepted
 585,PEP 585 – Type Hinting Generics In Standard Collections,Accepted
@@ -397,7 +397,7 @@
 407,PEP 407 – New release cycle and introducing long-term support versions,Deferred
 406,PEP 406 – Improved Encapsulation of Import State,Withdrawn
 405,PEP 405 – Python Virtual Environments,Final
-403,PEP 403 – General purpose decorator clause (aka “@in” clause),Deferred
+403,PEP 403 – General purpose decorator clause (aka@in clause),Deferred
 401,PEP 401 – BDFL Retirement,April Fool!
 400,PEP 400 – Deprecate codecs.StreamReader and codecs.StreamWriter,Deferred
 402,PEP 402 – Simplified Package Layout and Partitioning,Rejected
@@ -406,7 +406,7 @@
 397,PEP 397 – Python launcher for Windows,Final
 398,PEP 398 – Python 3.3 Release Schedule,Final
 395,PEP 395 – Qualified Names for Modules,Withdrawn
-394,PEP 394 – The “python” Command on Unix-Like Systems,Active
+394,PEP 394 – The python Command on Unix-Like Systems,Active
 393,PEP 393 – Flexible String Representation,Final
 392,PEP 392 – Python 3.2 Release Schedule,Final
 390,PEP 390 – Static metadata for Distutils,Rejected
@@ -440,8 +440,8 @@
 361,PEP 361 – Python 2.6 and 3.0 Release Schedule,Final
 360,PEP 360 – Externally Maintained Packages,Final
 371,PEP 371 – Addition of the multiprocessing package to the standard library,Final
-359,PEP 359 – The “make” Statement,Withdrawn
-358,PEP 358 – The “bytes” Object,Final
+359,PEP 359 – The make Statement,Withdrawn
+358,PEP 358 – The bytes Object,Final
 357,PEP 357 – Allowing Any Object to be Used for Slicing,Final
 356,PEP 356 – Python 2.5 Release Schedule,Final
 355,PEP 355 – Path - Object oriented filesystem paths,Rejected
@@ -453,10 +453,10 @@
 349,PEP 349 – Allow str() to return unicode strings,Rejected
 347,PEP 347 – Migrating the Python CVS to Subversion,Final
 348,PEP 348 – Exception Reorganization for Python 3.0,Rejected
-346,PEP 346 – User Defined (”with”) Statements,Withdrawn
+346,PEP 346 – User Defined (with) Statements,Withdrawn
 345,PEP 345 – Metadata for Python Software Packages 1.2,Final
 344,PEP 344 – Exception Chaining and Embedded Tracebacks,Superseded
-343,PEP 343 – The “with” Statement,Final
+343,PEP 343 – The with Statement,Final
 342,PEP 342 – Coroutines via Enhanced Generators,Final
 341,PEP 341 – Unifying try-except and try-finally,Final
 337,PEP 337 – Logging Usage in the Standard Library,Deferred
@@ -537,7 +537,7 @@
 266,PEP 266 – Optimizing Global Variable/Attribute Access,Withdrawn
 264,PEP 264 – Future statements in simulated shells,Final
 262,PEP 262 – A Database of Installed Python Packages,Deferred
-261,PEP 261 – Support for “wide” Unicode characters,Final
+261,PEP 261 – Support for wide Unicode characters,Final
 259,PEP 259 – Omit printing newline after newline,Rejected
 260,PEP 260 – Simplify xrange(),Final
 258,PEP 258 – Docutils Design Specification,Rejected

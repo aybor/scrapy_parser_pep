@@ -25,15 +25,15 @@ class PepSpider(scrapy.Spider):
         )
         pattern = r'^(?P<name>PEP (?P<number>\d+) – .*)$'
         name, number = re.search(pattern, full_name).groups()
-        number = int(number.replace('PEP', ''))
+        number = number.replace('PEP', '')
         status = response.xpath(
             '//dl[@class="rfc2822 field-list simple"]'
             '/dt[contains(text(), "Status")]'
             '/following-sibling::dd[1]/text()'
         ).get()
         data = {
-            'number': number,
-            'name': name,
-            'status': status,
+            'number': number.strip(),
+            'name': name.strip(),
+            'status': status.strip(),
         }
         yield PepParseItem(data)

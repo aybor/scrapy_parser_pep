@@ -27,7 +27,13 @@ class PepParsePipeline:
         file_path = results_dir / file_name
 
         with open(file_path, 'w') as f:
-            writer = csv.DictWriter(f, dialect='unix', fieldnames=fieldnames, delimiter=',', quoting=csv.QUOTE_NONE)
+            writer = csv.DictWriter(
+                f,
+                dialect='unix',
+                fieldnames=fieldnames,
+                delimiter=',',
+                quoting=csv.QUOTE_NONE
+            )
             writer.writeheader()
             for status, qty in result_dic.items():
                 writer.writerow({'Статус': status, 'Количество': qty})

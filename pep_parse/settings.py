@@ -11,6 +11,7 @@ ITEM_PIPELINES = {
     'pep_parse.pipelines.PepParsePipeline': 300,
 }
 
+FEED_EXPORT_ENCODING = 'utf-8'
 FEEDS = {
     'results/pep_%(time)s.csv': {
         'format': 'csv',

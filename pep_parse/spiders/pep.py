@@ -26,7 +26,6 @@ class PepSpider(scrapy.Spider):
         pattern = r'^(?P<name>PEP (?P<number>\d+) – .*)$'
         name, number = re.search(pattern, full_name).groups()
         number = int(number.replace('PEP', ''))
-        name = name.strip()
         status = response.xpath(
             '//dl[@class="rfc2822 field-list simple"]'
             '/dt[contains(text(), "Status")]'

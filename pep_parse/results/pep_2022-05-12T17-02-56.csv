@@ -45,12 +45,12 @@ number,name,status
 8101,2020 Term steering council election,Active
 8002,Open Source Governance Survey,Active
 3333,Python Web Server Gateway Interface v1.0.1,Final
-3156,Asynchronous IO Support Rebooted: the “asyncio” Module,Final
+3156,Asynchronous IO Support Rebooted: the asyncio Module,Final
 3155,Qualified name for classes and functions,Final
 3154,Pickle protocol version 4,Final
 3153,Asynchronous IO support,Superseded
 3152,Cofunctions,Rejected
-3150,Statement local namespaces (aka “given” clause),Deferred
+3150,Statement local namespaces (aka given clause),Deferred
 3147,PYC Repository Directories,Final
 3148,futures - execute computations asynchronously,Final
 3146,Merging Unladen Swallow into CPython,Withdrawn
@@ -59,7 +59,7 @@ number,name,status
 8011,Python Governance Model Lead by Trio of Pythonistas,Rejected
 3144,IP Address Manipulation Library for the Python Standard Library,Final
 3143,Standard daemon process library,Deferred
-3142,Add a “while” clause to generator expressions,Rejected
+3142,Add a while clause to generator expressions,Rejected
 3149,ABI version tagged .so files,Final
 3141,A Type Hierarchy for Numbers,Final
 3140,str(container) should call str(item), not repr(item),Rejected
@@ -133,7 +133,7 @@ number,name,status
 670,Convert macros to functions in the Python C API,Accepted
 671,Syntax for late-bound function argument defaults,Draft
 669,Low Impact Monitoring for CPython,Draft
-668,Marking Python base environments as “externally managed”,Draft
+668,Marking Python base environments as externally managed,Draft
 667,Consistent views of namespaces,Draft
 666,Reject Foolish Indentation,Rejected
 664,Python 3.11 Release Schedule,Draft
@@ -210,7 +210,7 @@ number,name,status
 591,Adding a final qualifier to typing,Accepted
 593,Flexible function and variable annotations,Accepted
 594,Removing dead batteries from the standard library,Accepted
-592,Adding “Yank” Support to the Simple API,Final
+592,Adding Yank Support to the Simple API,Final
 590,Vectorcall: a fast calling protocol for CPython,Accepted
 589,TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys,Accepted
 588,GitHub Issues Migration Plan,Draft
@@ -396,7 +396,7 @@ number,name,status
 408,Standard library __preview__ package,Rejected
 407,New release cycle and introducing long-term support versions,Deferred
 404,Python 2.8 Un-release Schedule,Final
-403,General purpose decorator clause (aka “@in” clause),Deferred
+403,General purpose decorator clause (aka @in clause),Deferred
 401,BDFL Retirement,April Fool!
 405,Python Virtual Environments,Final
 402,Simplified Package Layout and Partitioning,Rejected
@@ -405,7 +405,7 @@ number,name,status
 398,Python 3.3 Release Schedule,Final
 397,Python launcher for Windows,Final
 395,Qualified Names for Modules,Withdrawn
-394,The “python” Command on Unix-Like Systems,Active
+394,The python Command on Unix-Like Systems,Active
 396,Module Version Numbers,Rejected
 406,Improved Encapsulation of Import State,Withdrawn
 393,Flexible String Representation,Final
@@ -439,10 +439,10 @@ number,name,status
 364,Transitioning to the Py3K Standard Library,Withdrawn
 362,Function Signature Object,Final
 363,Syntax For Dynamic Attribute Access,Rejected
-359,The “make” Statement,Withdrawn
+359,The make Statement,Withdrawn
 361,Python 2.6 and 3.0 Release Schedule,Final
 360,Externally Maintained Packages,Final
-358,The “bytes” Object,Final
+358,The bytes Object,Final
 357,Allowing Any Object to be Used for Slicing,Final
 356,Python 2.5 Release Schedule,Final
 355,Path - Object oriented filesystem paths,Rejected
@@ -454,12 +454,12 @@ number,name,status
 350,Codetags,Rejected
 348,Exception Reorganization for Python 3.0,Rejected
 347,Migrating the Python CVS to Subversion,Final
-346,User Defined (”with”) Statements,Withdrawn
+346,User Defined (with) Statements,Withdrawn
 345,Metadata for Python Software Packages 1.2,Final
 342,Coroutines via Enhanced Generators,Final
 344,Exception Chaining and Embedded Tracebacks,Superseded
 341,Unifying try-except and try-finally,Final
-343,The “with” Statement,Final
+343,The with Statement,Final
 340,Anonymous Block Statements,Rejected
 339,Design of the CPython Compiler,Withdrawn
 338,Executing modules as scripts,Final
@@ -538,7 +538,7 @@ number,name,status
 264,Future statements in simulated shells,Final
 262,A Database of Installed Python Packages,Deferred
 263,Defining Python Source Code Encodings,Final
-261,Support for “wide” Unicode characters,Final
+261,Support for wide Unicode characters,Final
 260,Simplify xrange(),Final
 259,Omit printing newline after newline,Rejected
 258,Docutils Design Specification,Rejected

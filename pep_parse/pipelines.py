@@ -25,7 +25,8 @@ class PepParsePipeline:
         results.append(('Total', sum(result_dic.values())))
         results_dir = BASE_DIR / 'results'
         results_dir.mkdir(exist_ok=True)
-        file_name = f'status_summary_{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv'
+        file_name = (f'status_summary_'
+                     f'{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv')
         file_path = results_dir / file_name
         with open(file_path, 'w', encoding='utf-8') as f:
             writer = csv.writer(f, dialect='unix')

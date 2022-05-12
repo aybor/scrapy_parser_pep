@@ -11,12 +11,18 @@ class PepSpider(scrapy.Spider):
     start_urls = [f'https://{PEP_URL}/']
 
     def parse(self, response):
-        all_peps = response.xpath('//*[@id="numerical-index"]//td[@class="num"]//a')
+        all_peps = response.xpath(
+            '//*[@id="numerical-index"]//td[@class="num"]//a'
+        )
         for pep_link in all_peps:
             yield response.follow(pep_link, callback=self.parse_pep)
 
     def parse_pep(self, response):
-        full_name = ''.join(response.xpath('//h1[@class="page-title"]//text()').getall())
+        full_name = ''.join(
+            response.xpath(
+                '//h1[@class="page-title"]//text()'
+            ).getall()
+        )
         pattern = r'^PEP (?P<number>\d+) – (?P<name>.*)$'
         number, name = re.search(pattern, full_name).groups()
         number = int(number.replace('PEP', ''))

@@ -1,4 +1,3 @@
-number,name,status
 1,PEP 1 – PEP Purpose and Guidelines,Active
 237,PEP 237 – Unifying Long Integers and Integers,Final
 240,PEP 240 – Adding a Rational Literal to Python,Rejected

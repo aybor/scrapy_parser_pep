@@ -24,7 +24,7 @@ number,name,status
 223,PEP 223 – Change the Meaning of \x Escapes,Final
 222,PEP 222 – Web Library Enhancements,Deferred
 224,PEP 224 – Attribute Docstrings,Rejected
-220,"PEP 220 – Coroutines, Generators, Continuations",Rejected
+220,PEP 220 – Coroutines, Generators, Continuations,Rejected
 219,PEP 219 – Stackless Python,Deferred
 218,PEP 218 – Adding a Built-In Set Object Type,Final
 217,PEP 217 – Display Hook for Interactive Use,Final
@@ -62,7 +62,7 @@ number,name,status
 3144,PEP 3144 – IP Address Manipulation Library for the Python Standard Library,Final
 3146,PEP 3146 – Merging Unladen Swallow into CPython,Withdrawn
 3141,PEP 3141 – A Type Hierarchy for Numbers,Final
-3140,"PEP 3140 – str(container) should call str(item), not repr(item)",Rejected
+3140,PEP 3140 – str(container) should call str(item), not repr(item),Rejected
 3139,PEP 3139 – Cleaning out sys and the “interpreter” module,Rejected
 3137,PEP 3137 – Immutable Bytes and Mutable Buffer,Final
 3136,PEP 3136 – Labeled break and continue,Rejected
@@ -79,7 +79,7 @@ number,name,status
 3126,PEP 3126 – Remove Implicit String Concatenation,Rejected
 3123,PEP 3123 – Making PyObject_HEAD conform to standard C,Final
 3122,PEP 3122 – Delineation of the main module,Rejected
-3124,"PEP 3124 – Overloading, Generic Functions, Interfaces, and Adaptation",Deferred
+3124,PEP 3124 – Overloading, Generic Functions, Interfaces, and Adaptation,Deferred
 3120,PEP 3120 – Using UTF-8 as the default source encoding,Final
 3125,PEP 3125 – Remove Backslash Continuation,Rejected
 3119,PEP 3119 – Introducing Abstract Base Classes,Final
@@ -95,7 +95,7 @@ number,name,status
 3110,PEP 3110 – Catching Exceptions in Python 3000,Final
 3109,PEP 3109 – Raising Exceptions in Python 3000,Final
 3108,PEP 3108 – Standard Library Reorganization,Final
-3106,"PEP 3106 – Revamping dict.keys(), .values() and .items()",Final
+3106,PEP 3106 – Revamping dict.keys(), .values() and .items(),Final
 3107,PEP 3107 – Function Annotations,Final
 3105,PEP 3105 – Make print a function,Final
 3100,PEP 3100 – Miscellaneous Python 3.0 Plans,Final
@@ -110,7 +110,7 @@ number,name,status
 3000,PEP 3000 – Python 3000,Final
 3001,PEP 3001 – Procedure for reviewing and improving standard library modules,Withdrawn
 3002,PEP 3002 – Procedure for Backwards-Incompatible Changes,Final
-683,"PEP 683 – Immortal Objects, Using a Fixed Refcount",Draft
+683,PEP 683 – Immortal Objects, Using a Fixed Refcount,Draft
 684,PEP 684 – A Per-Interpreter GIL,Draft
 686,PEP 686 – Make UTF-8 mode default,Draft
 690,PEP 690 – Lazy Imports,Draft
@@ -133,7 +133,7 @@ number,name,status
 671,PEP 671 – Syntax for late-bound function argument defaults,Draft
 672,PEP 672 – Unicode-related Security Considerations for Python,Active
 670,PEP 670 – Convert macros to functions in the Python C API,Accepted
-663,"PEP 663 – Standardizing Enum str(), repr(), and format() behaviors",Rejected
+663,PEP 663 – Standardizing Enum str(), repr(), and format() behaviors,Rejected
 668,PEP 668 – Marking Python base environments as “externally managed”,Draft
 664,PEP 664 – Python 3.11 Release Schedule,Draft
 666,PEP 666 – Reject Foolish Indentation,Rejected
@@ -321,7 +321,7 @@ number,name,status
 484,PEP 484 – Type Hints,Final
 482,PEP 482 – Literature Overview for Type Hints,Final
 477,PEP 477 – Backport ensurepip (PEP 453) to Python 2.7,Final
-481,"PEP 481 – Migrate CPython to Git, Github, and Phabricator",Withdrawn
+481,PEP 481 – Migrate CPython to Git, Github, and Phabricator,Withdrawn
 475,PEP 475 – Retry system calls failing with EINTR,Final
 476,PEP 476 – Enabling certificate verification by default for stdlib http clients,Final
 478,PEP 478 – Python 3.5 Release Schedule,Active
@@ -360,7 +360,7 @@ number,name,status
 443,PEP 443 – Single-dispatch generic functions,Final
 441,PEP 441 – Improving Python ZIP Application Support,Final
 442,PEP 442 – Safe object finalization,Final
-437,"PEP 437 – A DSL for specifying signatures, annotations and argument converters",Rejected
+437,PEP 437 – A DSL for specifying signatures, annotations and argument converters,Rejected
 436,PEP 436 – The Argument Clinic DSL,Final
 444,PEP 444 – Python Web3 Interface,Deferred
 440,PEP 440 – Version Identification and Dependency Specification,Active
@@ -383,7 +383,7 @@ number,name,status
 421,PEP 421 – Adding sys.implementation,Final
 420,PEP 420 – Implicit Namespace Packages,Final
 419,PEP 419 – Protecting cleanup statements from interruptions,Deferred
-418,"PEP 418 – Add monotonic time, performance counter, and process time functions",Final
+418,PEP 418 – Add monotonic time, performance counter, and process time functions,Final
 415,PEP 415 – Implement context suppression with exception attributes,Final
 417,PEP 417 – Including mock in the Standard Library,Final
 416,PEP 416 – Add a frozendict builtin type,Rejected

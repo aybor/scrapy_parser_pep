@@ -301,7 +301,7 @@ number,name,status
 504,Using the System RNG by default,Withdrawn
 502,String Interpolation - Extended Discussion,Rejected
 501,General purpose string interpolation,Deferred
-499,python -m foo should bind sys.modules['foo'] in addition to sys.modules['__main__'],Deferred
+499,python -m foo should bind sys.modules[foo] in addition to sys.modules[__main__],Deferred
 500,A protocol for delegating datetime methods to their tzinfo implementations,Rejected
 498,Literal String Interpolation,Final
 497,A standard mechanism for backward compatibility,Rejected

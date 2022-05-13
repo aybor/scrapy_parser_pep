@@ -32,8 +32,7 @@ class PepParsePipeline:
                 dialect='unix',
                 fieldnames=fieldnames,
                 delimiter=',',
-                quoting=csv.QUOTE_NONE,
-                escapechar=' ',
+                quoting=csv.QUOTE_NONE
             )
             writer.writeheader()
             for status, qty in result_dic.items():

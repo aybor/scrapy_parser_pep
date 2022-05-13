@@ -18,24 +18,24 @@ class PepSpider(scrapy.Spider):
             yield response.follow(pep_link, callback=self.parse_pep)
 
     def parse_pep(self, response):
-        # full_name = ''.join(
-        #     response.xpath(
-        #         '//h1[@class="page-title"]//text()'
-        #     ).getall()
-        # )
-        full_name = response.xpath(
-            '//h1[@class="page-title"]//text()'
-        ).get()
+        full_name = ''.join(
+            response.xpath(
+                '//h1[@class="page-title"]//text()'
+            ).getall()
+        )
+
         pattern = r'^PEP (?P<number>\d+) – .*$'
-        number = re.search(pattern, full_name).groups()[0].replace('PEP', '')
+        number = int(re.search(
+            pattern, full_name
+        ).groups()[0].replace('PEP', ''))
         status = response.xpath(
             '//dl[@class="rfc2822 field-list simple"]'
             '/dt[contains(text(), "Status")]'
             '/following-sibling::dd[1]/text()'
         ).get()
         data = {
-            'number': number.strip(),
-            'name': full_name.strip(),
-            'status': status.strip(),
+            'number': number,
+            'name': full_name,
+            'status': status,
         }
         yield PepParseItem(data)

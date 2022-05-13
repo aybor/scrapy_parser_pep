@@ -18,11 +18,14 @@ class PepSpider(scrapy.Spider):
             yield response.follow(pep_link, callback=self.parse_pep)
 
     def parse_pep(self, response):
-        full_name = ''.join(
-            response.xpath(
+        # full_name = ''.join(
+        #     response.xpath(
+        #         '//h1[@class="page-title"]//text()'
+        #     ).getall()
+        # )
+        full_name = response.xpath(
                 '//h1[@class="page-title"]//text()'
-            ).getall()
-        )
+            ).get()
         pattern = r'^PEP (?P<number>\d+) – .*$'
         number = re.search(pattern, full_name).groups()[0].replace('PEP', '')
         status = response.xpath(

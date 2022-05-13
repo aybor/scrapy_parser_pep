@@ -26,7 +26,7 @@ class PepParsePipeline:
                      f'{dt.datetime.now().strftime(DATETIME_FORMAT)}.csv')
         file_path = results_dir / file_name
 
-        with open(file_path, 'w') as f:
+        with open(file_path, 'w', newline='') as f:
             writer = csv.DictWriter(
                 f,
                 dialect='unix',

@@ -23,17 +23,16 @@ class PepSpider(scrapy.Spider):
                 '//h1[@class="page-title"]//text()'
             ).getall()
         )
-        pattern = r'^(?P<name>PEP (?P<number>\d+) – .*)$'
-        name, number = re.search(pattern, full_name).groups()
-        number = number.replace('PEP', '')
+        pattern = r'^PEP (?P<number>\d+) – .*$'
+        number = re.search(pattern, full_name).groups()[0].replace('PEP', '')
         status = response.xpath(
             '//dl[@class="rfc2822 field-list simple"]'
             '/dt[contains(text(), "Status")]'
             '/following-sibling::dd[1]/text()'
         ).get()
         data = {
-            'number': number.strip().encode('utf-8'),
-            'name': name.strip().encode('utf-8'),
-            'status': status.strip().encode('utf-8'),
+            'number': number.strip(),
+            'name': full_name.strip(),
+            'status': status.strip(),
         }
         yield PepParseItem(data)

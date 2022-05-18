@@ -3,23 +3,25 @@ import datetime as dt
 
 from pep_parse.constants import BASE_DIR, DATETIME_FORMAT
 
-result_dic = {}
-
 
 class PepParsePipeline:
 
     def open_spider(self, spider):
-        pass
+        self.result_dic = {}
 
     def process_item(self, item, spider):
-        if item['status'] in result_dic.keys():
-            result_dic[item['status']] += 1
+        if item['status'] in self.result_dic.keys():
+            self.result_dic[item['status']] += 1
         else:
-            result_dic[item['status']] = 1
+            self.result_dic[item['status']] = 1
         return item
 
     def close_spider(self, spider):
-        fieldnames = ['Статус', 'Количество']
+        results = [('Статус', 'Количество')]
+        for status, qty in self.result_dic.items():
+            results.append((status, qty))
+        results.append(('Total', sum(self.result_dic.values())))
+
         results_dir = BASE_DIR / 'results'
         results_dir.mkdir(exist_ok=True)
         file_name = (f'status_summary_'
@@ -27,13 +29,10 @@ class PepParsePipeline:
         file_path = results_dir / file_name
 
         with open(file_path, 'w', newline='') as f:
-            writer = csv.DictWriter(
+            writer = csv.writer(
                 f,
                 dialect='unix',
-                fieldnames=fieldnames,
                 delimiter=',',
                 quoting=csv.QUOTE_NONE
             )
-            writer.writeheader()
-            for status, qty in result_dic.items():
-                writer.writerow({'Статус': status, 'Количество': qty})
+            writer.writerows(results)
